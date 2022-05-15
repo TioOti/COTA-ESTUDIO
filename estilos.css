@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;900&family=Roboto:wght@300;400;500;900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;	
+	background-color: gray;
+}
+#header{
+	display: grid;
+	grid-template-columns: 10% 50% 40% 1fr;
+	color: white;
+	padding: .3rem;
+	text-align: center;
+	width: 100vw;
+	height: 10em;
+	position: sticky;
+	top: 0;	
+	background-color: rgba(0, 0, 0, .95);
+}
+
+.logo_header_footer img {
+	width: 130px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 150px;
+	border-radius: 90px;
+}
+#header .titulo_header_footer{
+	font-size: 4rem;
+	font-weight: 900;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 2rem; 
+}	
+.nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin-top: 3.8rem;
+	margin-right: 10px;
+}
+
+.nav li a{
+	text-decoration: none;
+	font-size: 1.1rem;
+	color: ghostwhite;
+	border: white solid 2px;
+	padding: 13px;
+	box-sizing: border-box;
+	border-radius: 20px;
+}
+.background_black {
+	/*background-image: url(img/logo_wallpaper.jpg);*/
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+.titulo_parrafo{
+	color: white;
+	font-size: 2.4rem;
+	font-weight: 700;
+	padding: 20px;
+	text-align: center;
+	font-size: 2.5rem;
+	box-sizing: border-box;
+}
+
+.background_black .parrafo_main{
+	color: white;
+	text-align: center;
+	font-size: 1.3rem;	
+	font-weight:300;
+	max-width: 600px;
+	margin-left: 650px;
+	line-height: 1.5;
+}
+.carrousel_grid{
+	grid-template-rows: 120px auto 120px;
+	min-height: 800px;
+	min-width: 600px;
+
+}
+#container_grid{
+	background-color: black;
+	display: grid;
+	grid-template-rows: 800px auto 120px;
+	min-height: 100vh;
+}
+.carrousel_grid{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 1280px;
+	justify-self: center;
+	align-items: center;
+
+}
+.carrousel_grid .item{
+	width: 33.333%;
+	padding: 20px;	
+	box-sizing: border-box;	
+}
+.carrousel_grid img{
+ 	width: 400px;
+ 	height: 400px;
+ 	max-width: 500px;
+ 	border-radius: 20px;
+ }
+ .titulo_principal_tattos{
+ 	font-size: 3.5rem;
+ 	text-align: center;
+ 	margin-top: 0px;
+ 	box-sizing: border-box;
+ 	background-color: black;
+ 	font-weight: 700;
+ 	color: white;
+ 	padding: 10px;
+ }
+.titulo_principal_tattos img{
+	margin-top: 20px;
+	border-radius: 20px;
+}
+.subtitulo_principal_tatoos{
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+form{
+	width: 450px;
+	margin: auto;
+	background-color: rgba(0, 0, 0, .4);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-top: 50px;
+	border-radius: 9px;
+	margin-bottom: 250px;
+}
+form .title_form{
+	color: #ffff;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 1.3rem;
+}
+input, textarea{
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 5px;
+	box-sizing: border-box;
+	font-size: 1rem;
+	border: none;
+}
+textarea{
+	min-height: 100px;
+	max-height: 200px;
+	min-width: 100%;
+	max-width: 100%;
+}
+form .boton{
+	background-color: gray;
+	color: #fff;
+	padding: 15px;
+}
+
+.background_black .staff_foto{
+	width: 50rem;
+	margin-left: 35rem;
+}
+.background_black .staff_foto img{
+	width: 100%;
+}
+
+
+/*Pagina--Staff--*/
+.grid_staff{
+	display: grid;
+	grid-template-columns: 40% 60%;
+	color: white;
+	margin-top: 30px;
+	width: 100%;
+	height: 420px;
+	text-align: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.9);
+	border: white solid 2px;
+}
+.grid_staff2{
+	display: grid;
+	grid-template-columns: 60% 40%;
+	color: white;
+	margin-top: 30px;
+	width: 100%;
+	height: 420px;
+	text-align: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.9);
+	border: white solid 2px;
+}
+.grid_staff .grid_staff_foto_der img{
+	width: 400px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+.grid_staff2 .grid_staff_foto_der img{
+	width: 400px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+.grid_staff .subtitulo_descrpcion_der{
+	font-size: 2rem;
+	width: 70%;
+	height: auto;
+	margin-top: 20px;
+	margin-left: 30px;
+	margin-bottom: 15px;
+
+}
+.grid_staff2 .subtitulo_descrpcion_izq{
+	font-size: 2rem;
+	width: 70%;
+	height: auto;
+	margin-top: 20px;
+	margin-left: 30px;
+	margin-bottom: 15px;
+	
+}
+.socials_staff{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.socials_staff img{
+	width: 70px;
+	margin-top: 50px;
+
+}
+/* --Grid de Staff-- */
+.grid_staff .subtitulo_descrpcion_der .contenido_descripcion_der{
+	font-size: 1.1rem;
+	margin-top: 20px;
+	text-align: justify-all;
+}
+.grid_staff2 .subtitulo_descrpcion_izq .contenido_descripcion_izq{
+	font-size: 1.1rem;
+	margin-top: 20px;
+	text-align: justify-all;
+}
+
+/*--Grid de Ventas--*/
+.ventas_grid{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	background-color: black;
+	justify-content: center;
+	align-items: center;
+
+}
+.ventas_grid img{
+	width: 450px;
+	margin-left: 5rem;
+	justify-content: center;
+	align-items: center;
+}
+.ventas_grid .titulo_ventas{
+	color: white;
+	font-size: 3rem;
+	font-weight: 400;
+	text-align: center;
+
+}
+
+/*Footer*/
+#footer{
+	padding: .3rem;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(145, 143, 137, .8);
+}
+#footer .footer_element{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); 
+	grid-gap: 30px;
+}
+
+#footer .footer_element .logo_footer{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+#footer .footer_element .logo_footer a img{
+	width: 130px;
+	border: white solid 2px;
+	border-radius: 100px;
+}
+#footer .footer_element_follow h2{
+	text-align: center;
+	align-items: center;
+	font-size: 1.5rem;
+	margin-top: 35px;
+}
+#footer .footer_element_socials{
+margin: auto;
+}
+#footer .footer_element_socials .socials{
+	font-size: 1.3rem;
+}
