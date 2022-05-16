@@ -265,9 +265,9 @@ body{
 	align-items: center;
 }
 .socials_icons i{
-	background-color: gray;
 	align-content: space-between;
 	text-decoration: none;
+	margin: 0 1.3rem;
 	color: black;
 }
 
@@ -685,7 +685,4 @@ body{
 	border-radius: 5px;
 	transform: scale(1.4);
 	background-color: whitesmoke;
-}
-.logo_footer img:hover{
-	animation: cubic-bezier(0.5, 0.7, 1.0, 1.0);
 }
