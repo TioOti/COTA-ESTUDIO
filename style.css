@@ -32,6 +32,7 @@ body{
 
 #header{
 	grid-area: header;
+	z-index: 2;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -132,7 +133,7 @@ body{
 	font-size: 2.5rem;
 }
 
-/*Fotos de muestra - 3x3*/
+/*Fotos de muestra "GRID" - 3x3*/
 #container_grid{
 	background-color: black;
 	display: grid;
@@ -197,7 +198,6 @@ body{
 	width: 70%;
 	margin-top: 2rem;
 	margin-bottom: 15px;
-
 }
 .container_staff .staff_mirror{
 	flex-direction: row-reverse;
@@ -237,7 +237,7 @@ body{
 	margin: auto;
 	display: grid;
 	grid-template-columns: repeat(3, 2fr); 
-	grid-gap: 30px;
+	grid-gap: auto;
 }
 
 #footer .footer_element .logo_footer{
@@ -253,17 +253,22 @@ body{
 	border: white solid 2px;
 	border-radius: 100px;
 }
-#footer .footer_element_follow h2{
+#footer .footer_element_follow{
 	justify-content: center;
 	align-items: center;
 	font-size: 1.5rem;
-	margin-top: 35px;
+	margin: auto;
 }
 #footer .footer_element_socials{
-margin: auto;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
 }
-#footer .footer_element_socials .socials{
-	font-size: 1.3rem;
+.socials_icons i{
+	background-color: gray;
+	align-content: space-between;
+	text-decoration: none;
+	color: black;
 }
 
 /*-----------MediaQ y Transforms *-----------/
@@ -664,3 +669,23 @@ margin: auto;
 	}
 }
 
+
+/* Transforms */
+.nav ul li a:hover{
+	background-color: #fafafa;
+	color: black;
+}
+.carrousel_grid img:hover{
+	background-color: none;
+	transform: scale(1.1);
+	border: #fafafa solid 5px;
+}
+.socials_icons i:hover{
+	border: black 2px solid ;
+	border-radius: 5px;
+	transform: scale(1.4);
+	background-color: whitesmoke;
+}
+.logo_footer img:hover{
+	animation: cubic-bezier(0.5, 0.7, 1.0, 1.0);
+}
